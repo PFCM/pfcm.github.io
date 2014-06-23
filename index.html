@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Paul Mathews by PFCM</title>
+    <title>Paul Mathews</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
@@ -16,21 +16,152 @@
     <div class="wrapper">
       <header>
         <h1>Paul Mathews</h1>
-        <p>Paul Mathews</p>
-
-
-        <p class="view"><a href="https://github.com/PFCM">View My GitHub Profile</a></p>
-
       </header>
+      
       <section>
-        <h1>
-<a name="pfcm" class="anchor" href="#pfcm"><span class="octicon octicon-link"></span></a>PFCM</h1>
+      <h2>
+      Projects &mdash;
+      </h2>
+      
+      <div id="tangle" class="work" onclick="clickHandler(event);">
+            <div class="worktitle">
+                Tangle
+            </div>
+            <div class="workbody">
+                Network for performance and composition with sophisticated instruments. 
+                Written in ChucK, work undertaken for a Summer Research Scholarship at 
+                Victoria University, School of Engineering and Computer Science, 
+                supervised by Ajay Kapur and Dale Carnegie.
+            </div>
+        </div>
+        
+      <div id="immanence" class="work" onclick="clickHandler(event);">
+            <div class="worktitle">
+                Immanence &ndash; collaboration with Timothy Barraclough
+            </div>
+            <div class="workbody">
+                An audiovisual/electromechanical installation, with Timothy Barraclough.
+            </div>
+        </div>
+        <div id="liveatx" onclick="clickHandler(event);" class="work">
+            <div class="worktitle">
+                <span> Live at <normal>X</normal></span>
+            </div>
+            <div class="workbody">
+                <div>
+                A series of live electronic performances exploring the 'liveness' of
+                electronic music and providing a sonic exploration of the audible
+                architecture of the space in which is is performed. <br>
+                This piece has been performed in several incarnations.
+                </div>
+                <div><i>Live at St Paul's Cathedral</i><br>
+                        Performance as part of a larger concert in the Wellington 
+                        Cathedral of St Paul.
+                </div><br>
+                <span><i>Live in my Bedroom<br></i></span>
+                <!-- VIDEO GOES HERE, BEFORE 4th CHILD -->
+                <div>
+                <br><i>Live at City Gallery Wellington<br></i>
+                Performance as part of a larger concert at the Wellington City Gallery. 
+                </div>
+                
+            </div>
+        </div>
+      
       </section>
+      
       <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      <p class="view"><a href="https://github.com/PFCM">GitHub Profile</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; based on theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
     
   </body>
 </html>
+
+<script type="text/javascript">
+    function clickHandler(event) {
+        if(!event) event = window.getEvent();
+        
+        var eTarg = event.target || event.srcElement;
+        while (eTarg.className != 'work')
+            eTarg = eTarg.parentElement;
+        
+        if (!(eTarg.className == 'work'))
+            throw("error");
+            
+        var workBlock;
+        for(i=0; i<eTarg.children.length; i++) {
+            if (eTarg.children[i].className == 'workbody') {
+                workBlock = eTarg.children[i];
+                break;
+            }
+        }
+        if(!workBlock)
+            throw("error, inappropriate children");
+        
+        
+        if (!workBlock.style.display || workBlock.style.display == "none") {
+            // if this needs an embedded video
+            switch (eTarg.id) {
+                case 'untitled': {
+                    var iFrame = '<iframe src="http://player.vimeo.com/video/52898507?portrait=0&color=ffffff&title=0&byline=0" width="712" height="400" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>'
+                    var div = document.createElement('div');
+                    div.innerHTML = iFrame;
+                    workBlock.insertBefore(div, workBlock.firstChild);
+                    break;
+                }
+                case 'telephone': {
+                    var iFrame = '<iframe src="http://player.vimeo.com/video/52984112?portrait=0&color=ffffff&title=0&byline=0" width="712" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+                     var div = document.createElement('div');
+                    div.innerHTML = iFrame;
+                    workBlock.insertBefore(div, workBlock.firstChild);
+                    break;
+                }
+                case 'immanence': {
+                    var iFrame = '<iframe src="http://player.vimeo.com/video/76843514?portrait=0&color=ffffff&title=0&byline=0" width="712" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+                     var div = document.createElement('div');
+                    div.innerHTML = iFrame;
+                    workBlock.insertBefore(div, workBlock.firstChild);
+                    break;
+                }
+                case 'liveatx': {
+                    var iFrame = '<iframe src="http://player.vimeo.com/video/68766842?portrait=0&color=ffffff&title=0&byline=0" width="545" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+                    var div = document.createElement('div');
+                    div.innerHTML = iFrame;
+                    workBlock.insertBefore(div, workBlock.children[4]);
+                    break;
+                }
+                case 'tangle': {
+                    var iFrame = '<iframe src="http://player.vimeo.com/video/86090104?portrait=0&color=ffffff&title=0&byline=0" width="545" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+                    var div = document.createElement('div');
+                    div.innerHTML = iFrame;
+                    workBlock.insertBefore(div, workBlock.children[4]);
+                    break;
+                }
+                default:
+                     break;
+            }
+            workBlock.style.display = 'block';
+        }
+        else {
+            switch (eTarg.id) {
+                case 'untitled':
+                case 'telephone':
+                case 'immanence': {
+                    workBlock.removeChild(workBlock.firstChild);
+                    break;
+                }
+                case 'liveatx': {
+                    workBlock.removeChild(workBlock.children[4]);
+                    break;
+                }
+                default:
+                    break;
+            }
+            workBlock.style.display = 'none';
+            workBlock.style.color = '#d0d0d0'
+        }
+    }
+</script>

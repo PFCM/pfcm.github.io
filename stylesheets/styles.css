@@ -1,15 +1,16 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700, 100, 100italic);
 
 body {
   padding:50px;
-  font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font:14px/1.5 "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#777;
-  font-weight:300;
+  font-weight:100;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color:#222;
   margin:0 0 20px;
+  font-weight:300;
 }
 
 p, ul, ol, table, pre, dl {
@@ -21,7 +22,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size:28px;
+  font-size:45px;
 }
 
 h2 {
@@ -34,7 +35,7 @@ h3, h4, h5, h6 {
 
 a {
   color:#39c;
-  font-weight:400;
+  font-weight:300;
   text-decoration:none;
 }
 
@@ -96,9 +97,8 @@ img {
 }
 
 header {
-  width:270px;
+  width: 100%;
   float:left;
-  position:fixed;
 }
 
 header ul {
@@ -161,7 +161,6 @@ header ul a strong {
 
 section {
   width:500px;
-  float:right;
   padding-bottom:50px;
 }
 
@@ -179,8 +178,31 @@ hr {
 footer {
   width:270px;
   float:left;
-  position:fixed;
+  position:static;
   bottom:50px;
+}
+
+div.work {
+  border-left: 1px solid #000000;
+  padding: 1em;
+}
+.worktitle {
+    text-align: left;
+    font-size: 32px;
+    padding-left: .7em;
+    font-weight: 300;
+    letter-spacing: -0.03em;
+    color: #444;
+    text-indent: -1ex;
+}
+
+.workbody {
+    padding-left: 2em;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 0.02em;
+    color: #000;
+    display: none;
 }
 
 @media print, screen and (max-width: 960px) {
@@ -217,6 +239,8 @@ footer {
     top:52px;
   }
 }
+
+
 
 @media print, screen and (max-width: 720px) {
   body {
