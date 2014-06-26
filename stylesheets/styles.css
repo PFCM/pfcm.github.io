@@ -186,18 +186,19 @@ footer {
 div.work {
   border-left: 1px solid #000000;
   padding: 1em;
+  max-width: 712px;
 }
 .worktitle {
-    text-align: left;
     font-size: 32px;
     padding-left: .7em;
     font-weight: 300;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.01em;
     color: #444;
     text-indent: -1ex;
 }
 
 .workbody {
+    text-align: justify;
     padding-left: 2em;
     font-size: 16px;
     font-weight: 100;
