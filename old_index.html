@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Paul Mathews</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      // if you click on a title it slides the body in or out
+      $(".worktitle").click(function( event ) {
+        var targ = event.target;
+        // the title, we need to go up on and get the body
+        if ($(targ).siblings(".workbody").css("display") == "none")
+          $(targ).siblings(".workbody").slideDown('slow');
+        else 
+          $(targ).siblings(".workbody").slideUp('slow');
+      });
+    });
+    </script>     
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Paul Mathews</h1>
+      </header>
+      
+      <section>
+      <h2>
+      Projects&mdash;
+      </h2>
+
+      <div id="3frames" class = "work">
+          <div class="worktitle">
+            Three Frames
+          </div>
+          <div class="workbody">
+            Audio-visual installation, shown at <a href="http://wellington.govt.nz/services/community-and-culture/arts/toi-poneke-arts-centre/about-toi-poneke"> Toi Poneke</a>
+            as part of Low Noise 2 group exhibition.
+
+            Embedded below is a segment with me from a video produced by <a href="http://sounz.org.nz">SOUNZ</a> 
+            about the exhibition, as well as the whole video (which is more interesting).
+              <iframe src="http://player.vimeo.com/video/121863221?portrait=0&color=ffffff&title=0&byline=0" width="712" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+           </div>
+      </div>
+      
+      <div id="tangle" class="work">
+            <div class="worktitle">
+                Tangle
+            </div>
+            <div class="workbody">
+                Network for performance and composition with sophisticated instruments. 
+                Written in ChucK, work undertaken for a Summer Research Scholarship at 
+                <a href="http://ecs.vuw.ac.nz" target="_blank">Victoria University, School 
+                of Engineering and Computer Science</a>, 
+                supervised by Ajay Kapur and Dale Carnegie.<br>
+                <iframe src="http://player.vimeo.com/video/86090104?portrait=0&color=ffffff&title=0&byline=0" width="712" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+            </div>
+        
+      <div id="immanence" class="work">
+            <div class="worktitle">
+                Immanence &ndash; collaboration with Timothy Barraclough
+            </div>
+            <div class="workbody">
+            <iframe src="http://player.vimeo.com/video/76843514?portrait=0&color=ffffff&title=0&byline=0" width="712" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                An audiovisual/electromechanical installation, with <a href="http://timothy-j.com/" target="_blank">
+                Timothy Barraclough. </a>
+            </div>
+        </div>
+        <div id="liveatx" class="work">
+            <div class="worktitle">
+                Live at <em>X</em>
+            </div>
+            <div class="workbody">
+                <p>
+                A series of live electronic performances exploring the performer-audience 
+                relationships which constitute a musical performance, with a view towards
+                testing the limits engagement by
+                providing a sonic exploration of the audible
+                architecture of the space in which is is performed.
+                This piece has been performed in several incarnations.
+                <p>
+                <p><i>Live at St Paul's Cathedral</i><br margin-bottom=0em>
+                        Performance as part of a larger concert in the Wellington 
+                        Cathedral of St Paul.
+                <p>
+                <p><i>Live in my Bedroom<br></i><br>
+                <iframe src="http://player.vimeo.com/video/68766842?portrait=0&color=ffffff&title=0&byline=0" width="712" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>    
+                <br>
+                </p>
+                <p>
+                <i>Live at City Gallery Wellington<br></i>
+                Performance as part of <em>Wound Sound</em>, a concert at the <a href="http://www.citygallery.org.nz/" target="_blank">
+                Wellington City Gallery</a>.
+                </p>
+                
+            </div>
+        </div>
+      
+      </section>
+      <section>
+      <h2>
+      Publications&mdash;
+      </h2>
+      <div id="tanglepub" class="pub">
+      Paul Mathews, Ness Morris, Jim Murphy, Ajay Kapur, Dale Carnegie "Tangle: a Flexible Framework for Performance
+      with Advanced Robotic Musical Instruments" <i> Proceedings of the International Conference on New Interfaces for
+      Musical Expression</i> London, 2014. <a href="/papers/Tangle.pdf"> [pdf] </a>
+      </div>
+      </section>
+      <footer>
+      <p class="view"><a href="https://github.com/PFCM">GitHub Profile</a></p>
+        <p><small>Hosted on GitHub Pages &ndash; based on theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
