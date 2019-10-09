@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/pfcm
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://pfcmathews.com
+  * I am pfcm (https://keybase.io/pfcm) on keybase.
+  * I have a public key ASCAC_fNoyv2wWAUH38Aieosw9bgbcbJIfjfn5182pOXKwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012075d7ee6e5b434f402d189ca66f476785184b48883dcf95b8db2b95b1312378f10a",
+      "host": "keybase.io",
+      "kid": "0120800bf7cda32bf6c160141f7f0089ea2cc3d6e06dc6c921f8df9f9d7cda93972b0a",
+      "uid": "1f69c721dc290881ca5fcbd28f940519",
+      "username": "pfcm"
+    },
+    "merkle_root": {
+      "ctime": 1570657643,
+      "hash": "5e67b013366495a7e9f4086a46d2cdf757488fa635dc1143297045a0a9334d9d82fb316a9ba79e28dc82fdbc80099188a0eac620e7844f9f6c954c1e39358f22",
+      "hash_meta": "cc805031951d92f0de984d217e33afb2f61645db694a290672846a03c3bcd838",
+      "seqno": 7944492
+    },
+    "service": {
+      "entropy": "HSTGmAltqljA++qTssBwWO+/",
+      "hostname": "pfcmathews.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.5.0"
+  },
+  "ctime": 1570657660,
+  "expire_in": 504576000,
+  "prev": "7d5aca49905364cc44b9e5ea16eab58e90d675650d8b7e0d491740ec9131cd04",
+  "seqno": 8,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEggAv3zaMr9sFgFB9/AInqLMPW4G3GySH435+dfNqTlysKp3BheWxvYWTESpcCCMQgfVrKSZBTZMxEueXqFuq1jpDWdWUNi34NSRdA7JExzQTEIPJrxn5mf0VTMgem0hKPhCxjsCRXCTvLNO/qgtS1tkd7AgHCo3NpZ8RAKN6gRzCx/GaCVFF8ftButhtihm5iBKttRBqj+bCrRHwWvxt7Fmkqg/s22T9NIOhSLz6lzQsWcLCTWoKk7+NlDKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIEQOHyuMAoPkfpoVTtMmSMXNQgftw25PtIhsqW291ixlo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/pfcm
+
+==================================================================
